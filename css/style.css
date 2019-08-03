@@ -23,3 +23,12 @@ h3 {
   background-position: left center;
   background-attachment: fixed;
 }
+
+.testing-img {
+  background: url("../img/Testing.jpg");
+  background-size: cover;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+}
