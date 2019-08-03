@@ -1,0 +1,25 @@
+body {
+  background: #fff;
+  color: black;
+  font-family: "nunito sans";
+}
+
+/* global color */
+
+.bg-baby-blue {
+  background-color: #035ea8;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.book {
+  background: url("../img/home.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-attachment: fixed;
+}
