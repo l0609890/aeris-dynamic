@@ -37,6 +37,55 @@ h3 {
   width: 100%;
 }
 
+/* adding image */
+
+.testing {
+  background-image: url("../img/Testing.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+/* arrow animation */
+.box {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.box span:nth-child(1) {
+  animation-delay: -0.2s;
+}
+
+.box span:nth-child(2) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }
