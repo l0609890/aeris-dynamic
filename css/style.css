@@ -1,20 +1,25 @@
-body {
-  background: #fff;
-  color: black;
-  font-family: "nunito sans";
-}
-
 /* global color */
 
 .bg-baby-blue {
   background-color: #035ea8;
 }
 
+/*global*/
+
+body {
+  background: #fff;
+  color: black;
+  font-family: "nunito sans";
+  overflow-x: hidden;
+}
+
 h3 {
   font-size: 2rem;
 }
 
-.book {
+/* image from the index.html page */
+
+.showcase {
   background: url("../img/home.jpg");
   background-size: cover;
   height: 100vh;
