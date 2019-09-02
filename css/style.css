@@ -1,9 +1,3 @@
-/* global color */
-
-.bg-baby-blue {
-  background-color: #035ea8;
-}
-
 /*global*/
 
 body {
@@ -15,6 +9,12 @@ body {
 
 h3 {
   font-size: 2rem;
+}
+
+/* global color */
+
+.bg-baby-blue {
+  background-color: #035ea8;
 }
 
 /* image from the index.html page */
@@ -35,14 +35,6 @@ h3 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-}
-
-/* adding image */
-
-.testing {
-  background-image: url("../img/Testing.jpg");
-  background-repeat: no-repeat;
-  background-position: top left;
 }
 
 /* arrow animation */
@@ -99,7 +91,6 @@ body {
   background: #fff;
   color: black;
   font-family: "nunito sans";
-  overflow: visible;
 }
 
 /* shoot css */
@@ -125,4 +116,10 @@ body {
   .more-pull-margin-top {
     margin-top: -3rem;
   }
+}
+
+#map {
+  height: 400px;
+  width: 500px;
+  margin: 0 auto;
 }

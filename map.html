@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Google Map</title>
+  </head>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+  <body>
+    <h1>My google map</h1>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var options = {
+          zoom: 2,
+          center: { lat: 1.3521, lng: 103.8198 }
+        };
+        var map = new google.maps.Map(document.getElementById("map"), options);
+
+        // var marker = new google.maps.Marker({
+        //   position: { lat: 42.4668, lng: 101.9758 },
+        //   map,
+        //   icon:
+        //     "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png"
+        // });
+
+        // var infoWindow = new google.maps.InfoWindow({
+        //   content: "<h1>Malaysia</h1>"
+        // });
+
+        // marker.addListener("click", () => {
+        //   infoWindow.open(map, marker);
+        // });
+
+        //array of marker
+
+        var markers = [
+          {
+            coords: { lat: 4.2105, lng: 101.9758 },
+            content: "<h1>Hey</h1>"
+          },
+          {
+            coords: { lat: 1.3521, lng: 103.8198 },
+            content: "<h1>Hey</h1>"
+          }
+        ];
+
+        for (let i = 0; i < markers.length; i++) {
+          addMarker(markers[i]);
+        }
+
+        //add marker function
+        function addMarker(props) {
+          var marker = new google.maps.Marker({
+            position: props.coords,
+            map
+          });
+          var infoWindow = new google.maps.InfoWindow({
+            content: props.content
+          });
+
+          marker.addListener("click", () => {
+            infoWindow.open(map, marker);
+          });
+        }
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHfXx7O4-UYPPGYIske97yhi24YHfi9Q4&callback=initMap"
+    ></script>
+  </body>
+</html>
