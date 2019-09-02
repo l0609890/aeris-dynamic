@@ -92,3 +92,37 @@ h3 {
     height: 100vh;
   }
 }
+
+/* this is shoot css */
+
+body {
+  background: #fff;
+  color: black;
+  font-family: "nunito sans";
+  overflow: visible;
+}
+
+/* shoot css */
+
+.pull-margin-top {
+  margin: 0;
+}
+
+.margin-top {
+  margin-top: 0;
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .pull-margin-top {
+    margin-top: -2rem;
+  }
+
+  .margin-top {
+    margin-top: -2rem;
+  }
+
+  .more-pull-margin-top {
+    margin-top: -3rem;
+  }
+}
